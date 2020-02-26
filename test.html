@@ -1,0 +1,198 @@
+<script src="moxy-color.js"></script>
+<script>
+	const colors = [
+		[255, 255, 255],
+		[255, 0, 255],
+		[255, 255, 0],
+		[0, 255, 255],
+		[255, 200, 255],
+		[255, 155, 255],
+		[255, 255, 120],
+		[133, 111, 255],
+		[255, 5, 222],
+		[5, 5, 255],
+		[5, 5, 240],
+		[15, 35, 235],
+		[255, 33, 111],
+		[125, 124, 123],
+		[50, 22, 11],
+		[5, 33, 255],
+		[222, 111, 222],
+		[111, 111, 222],
+		[111, 111, 1],
+		[125, 33, 33],
+		[67, 189, 255],
+		[189, 3, 255],
+		[125, 163, 0],
+		[67, 0, 66],
+		[222, 200, 244],
+		[11, 11, 255],
+		[255, 33, 33],
+		[254, 253, 234],
+		[55, 13, 11],
+		[23, 3, 3],
+		[0, 222, 33],
+		[255, 0, 221],
+		[189, 155, 118],
+	]
+	for (let i = 0; i < 200; i++) {
+		colors.push([
+			Math.floor(Math.random() * 255),
+			Math.floor(Math.random() * 255),
+			Math.floor(Math.random() * 255),
+		])
+	}
+	let html = ''
+	for (let i = 0; i < colors.length; i++) {
+		const [r, g, b] = colors[i]
+		html += `<span style="padding: 6px; display: inline-block;background-color: rgb(${r}, ${g}, ${b}); color: ${textColorFromBgColor(
+			[r, g, b],
+		)}">This is a test</span>`
+	}
+
+	let cz
+	cz = monochromaticColorPalette([255, 0, 255])
+	html += '<br /><br />Mono:<br />'
+	for (let i = 0; i < cz.length; i++) {
+		html += `<span style="padding: 6px; display: inline-block;background-color: rgb(${
+			cz[i][0]
+		}, ${cz[i][1]}, ${cz[i][2]}); color: ${textColorFromBgColor([
+			cz[i][0],
+			cz[i][1],
+			cz[i][2],
+		])}">This is a test</span>`
+	}
+
+	cz = monochromaticColorPalette([0, 40, 255])
+	html += '<br /><br />'
+	for (let i = 0; i < cz.length; i++) {
+		html += `<span style="padding: 6px; display: inline-block;background-color: rgb(${
+			cz[i][0]
+		}, ${cz[i][1]}, ${cz[i][2]}); color: ${textColorFromBgColor(
+			cz[i][0],
+			cz[i][1],
+			cz[i][2],
+		)}">This is a test</span>`
+	}
+
+	cz = monochromaticColorPalette([50, 170, 255])
+	html += '<br /><br />'
+	for (let i = 0; i < cz.length; i++) {
+		html += `<span style="padding: 6px; display: inline-block;background-color: rgb(${
+			cz[i][0]
+		}, ${cz[i][1]}, ${cz[i][2]}); color: ${textColorFromBgColor([
+			cz[i][0],
+			cz[i][1],
+			cz[i][2],
+		])}">This is a test</span>`
+	}
+
+	html += '<hr>Analogous:'
+
+	cz = analogousColorPalette([255, 170, 0])
+	html += '<br />'
+	for (let i = 0; i < cz.length; i++) {
+		html += `<span style="padding: 6px; display: inline-block;background-color: rgb(${
+			cz[i][0]
+		}, ${cz[i][1]}, ${cz[i][2]}); color: ${textColorFromBgColor([
+			cz[i][0],
+			cz[i][1],
+			cz[i][2],
+		])}">This is a test</span>`
+	}
+
+	cz = analogousColorPalette([0, 170, 255])
+	html += '<br /><br />'
+	for (let i = 0; i < cz.length; i++) {
+		html += `<span style="padding: 6px; display: inline-block;background-color: rgb(${
+			cz[i][0]
+		}, ${cz[i][1]}, ${cz[i][2]}); color: ${textColorFromBgColor([
+			cz[i][0],
+			cz[i][1],
+			cz[i][2],
+		])}">This is a test</span>`
+	}
+
+	cz = analogousColorPalette([0, 255, 0])
+	html += '<br /><br />'
+	for (let i = 0; i < cz.length; i++) {
+		html += `<span style="padding: 6px; display: inline-block;background-color: rgb(${
+			cz[i][0]
+		}, ${cz[i][1]}, ${cz[i][2]}); color: ${textColorFromBgColor([
+			cz[i][0],
+			cz[i][1],
+			cz[i][2],
+		])}">This is a test</span>`
+	}
+
+	cz = analogousColorPalette([255, 0, 0])
+	html += '<br /><br />'
+	for (let i = 0; i < cz.length; i++) {
+		html += `<span style="padding: 6px; display: inline-block;background-color: rgb(${
+			cz[i][0]
+		}, ${cz[i][1]}, ${cz[i][2]}); color: ${textColorFromBgColor([
+			cz[i][0],
+			cz[i][1],
+			cz[i][2],
+		])}">This is a test</span>`
+	}
+
+	cz = analogousColorPalette([188, 80, 190])
+	html += '<br /><br />'
+	for (let i = 0; i < cz.length; i++) {
+		html += `<span style="padding: 6px; display: inline-block;background-color: rgb(${
+			cz[i][0]
+		}, ${cz[i][1]}, ${cz[i][2]}); color: ${textColorFromBgColor([
+			cz[i][0],
+			cz[i][1],
+			cz[i][2],
+		])}">This is a test</span>`
+	}
+
+	html += '<hr>Complementary: <br />'
+
+	cz = complementaryColorPalette([188, 80, 190])
+	html += '<br /><br />'
+	for (let i = 0; i < cz.length; i++) {
+		html += `<span style="padding: 6px; display: inline-block;background-color: rgb(${
+			cz[i][0]
+		}, ${cz[i][1]}, ${cz[i][2]}); color: ${textColorFromBgColor([
+			cz[i][0],
+			cz[i][1],
+			cz[i][2],
+		])}">This is a test</span>`
+	}
+
+	cz = complementaryColorPalette([2, 71, 254])
+	html += '<br /><br />'
+	for (let i = 0; i < cz.length; i++) {
+		html += `<span style="padding: 6px; display: inline-block;background-color: rgb(${
+			cz[i][0]
+		}, ${cz[i][1]}, ${cz[i][2]}); color: ${textColorFromBgColor([
+			cz[i][0],
+			cz[i][1],
+			cz[i][2],
+		])}">This is a test</span>`
+	}
+
+	cz = complementaryColorPalette([254, 39, 18])
+	for (let i = 0; i < cz.length; i++) {
+		html += `<span style="padding: 6px; display: inline-block;background-color: rgb(${
+			cz[i][0]
+		}, ${cz[i][1]}, ${cz[i][2]}); color: ${textColorFromBgColor([
+			cz[i][0],
+			cz[i][1],
+			cz[i][2],
+		])}">This is a test</span>`
+	}
+
+	// 5, 99, 53 -> 95, 55.8, 44.3 -> 5, 80, 40
+
+	let cc
+	cc = hslToRgb(10, 100, 50)
+	html += `<br /><br /><span style="padding: 6px; display: inline-block;background-color: rgb(${cc[0]}, ${cc[1]}, ${cc[2]});">TEST</span>`
+
+	cc = hslToRgb(110, 100, 50)
+	html += `<br /><br /><span style="padding: 6px; display: inline-block;background-color: rgb(${cc[0]}, ${cc[1]}, ${cc[2]});">TEST</span>`
+	document.write(html)
+</script>

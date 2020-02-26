@@ -1,0 +1,47 @@
+{
+	"name": "moxy-color",
+	"version": "0.5.0",
+	"private": false,
+	"description": "Moxy Color",
+	"main": "moxyColor.js",
+	"engines": {
+		"node": ">=4.0.0"
+	},
+	"devDependencies": {
+		"@types/jest": "^24.0.24",
+		"@types/sinon": "^7.5.1",
+		"chai": "^4.2.0",
+		"jest": "^24.9.0",
+		"sinon": "^7.5.0",
+		"ts-jest": "^24.2.0",
+		"tslint": "^5.20.1",
+		"typescript": "^3.7.2",
+		"webpack": "^4.41.6",
+		"webpack-cli": "^3.3.11"
+	},
+	"scripts": {
+		"test": "jest tests/*",
+		"build": "npm run build:main",
+		"pack": "webpack ./moxyColor.js",
+		"build:main": "tsc moxyColor.ts",
+		"watch": "tsc -w moxyColor.ts",
+		"testb": "node moxyColor.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dcmox/moxy-rgb.git"
+	},
+	"keywords": [
+		"moxy",
+		"color",
+		"palette",
+		"library",
+		"rgb"
+	],
+	"author": "Daniel Moxon (dancmox@comcast.net)",
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/dcmox/moxy-rgb/issues"
+	},
+	"homepage": "https://github.com/dcmox/moxy-rgb#readme"
+}

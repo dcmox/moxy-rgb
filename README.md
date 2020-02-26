@@ -1,2 +1,3 @@
 # moxy-rgb
-Color library
+
+Comprehensive color library for your web development needs.
