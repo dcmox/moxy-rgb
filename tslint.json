@@ -6,7 +6,7 @@
 		"quotemark": [true, "single"],
 		"semicolon": false,
 		"triple-equals": true,
-		"indent": [true, "tabs", 1],
+		"indent": [true, "tabs", 4],
 		"no-shadowed-variable": false,
 		"typedef": [
 			true,

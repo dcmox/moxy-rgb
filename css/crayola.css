@@ -1,0 +1,116 @@
+:root {
+	--red: #ee204d;
+	--yellow: #fce883;
+	--blue: #1f75fe;
+	--brown: #b5674d;
+	--orange: #ff7538;
+	--green: #1cac78;
+	--violet: #926eae;
+	--black: #232323;
+	--red-violet: #c0448f;
+	--red-orange: #ff5349;
+	--yellow-green: #c5e384;
+	--blue-violet: #7366bd;
+	--carnation-pink: #ffaacc;
+	--yellow-orange: #ffb653;
+	--blue-green: #199ebd;
+	--white: #ededed;
+}
+
+.bg-red {
+	background-color: #ee204d;
+}
+.bg-yellow {
+	background-color: #fce883;
+}
+.bg-blue {
+	background-color: #1f75fe;
+}
+.bg-brown {
+	background-color: #b5674d;
+}
+.bg-orange {
+	background-color: #ff7538;
+}
+.bg-green {
+	background-color: #1cac78;
+}
+.bg-violet {
+	background-color: #926eae;
+}
+.bg-black {
+	background-color: #232323;
+}
+.bg-red-violet {
+	background-color: #c0448f;
+}
+.bg-red-orange {
+	background-color: #ff5349;
+}
+.bg-yellow-green {
+	background-color: #c5e384;
+}
+.bg-blue-violet {
+	background-color: #7366bd;
+}
+.bg-carnation-pink {
+	background-color: #ffaacc;
+}
+.bg-yellow-orange {
+	background-color: #ffb653;
+}
+.bg-blue-green {
+	background-color: #199ebd;
+}
+.bg-white {
+	background-color: #ededed;
+}
+
+.c-red {
+	color: #ee204d;
+}
+.c-yellow {
+	color: #fce883;
+}
+.c-blue {
+	color: #1f75fe;
+}
+.c-brown {
+	color: #b5674d;
+}
+.c-orange {
+	color: #ff7538;
+}
+.c-green {
+	color: #1cac78;
+}
+.c-violet {
+	color: #926eae;
+}
+.c-black {
+	color: #232323;
+}
+.c-red-violet {
+	color: #c0448f;
+}
+.c-red-orange {
+	color: #ff5349;
+}
+.c-yellow-green {
+	color: #c5e384;
+}
+.c-blue-violet {
+	color: #7366bd;
+}
+.c-carnation-pink {
+	color: #ffaacc;
+}
+.c-yellow-orange {
+	color: #ffb653;
+}
+.c-blue-green {
+	color: #199ebd;
+}
+.c-white {
+	color: #ededed;
+}
