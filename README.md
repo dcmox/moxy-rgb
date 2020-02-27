@@ -24,10 +24,8 @@ Color palettes include CSS vars which can be included into styles via:
 or via the existing classes, eg:
 
 ```html
-<span class="c-red"
-	>Text color is red<span>
-		<span class="bg-red">Background color is red<span></span></span></span
-></span>
+<span class="c-red">Text color is red</span>
+<span class="bg-red">Background color is red</span>
 ```
 
 ## Color Palette Generation
